@@ -3,9 +3,9 @@ module.exports = {
     {
       resolve: "smooth-doc",
       options: {
-        name: "Smooth DOC Starter",
-        description: "Use your own description...",
-        siteUrl: "https://example.com",
+        name: "LimePi",
+        description: "LimePi is a range of SoC board from TraxBee",
+        siteUrl: "http://limepi.org",
       },
     },
   ],

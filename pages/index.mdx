@@ -8,14 +8,24 @@ import {
   HeroTeaser,
   HeroActionList,
   HeroAction,
+  FeatureSection,
+  FeatureList,
+  Feature,
+  FeatureImage,
+  FeatureTitle,
+  FeatureText
 } from "smooth-doc/components";
 import heroBackgroundImageURL from "../images/hero-background.png";
+import ICImageURL from "../images/IC.png"
+import ROMImageURL from "../images/ROM.png"
+import SDCardImageURL from "../images/SDCARD.png"
+import USBImageURL from "../images/USB.png"
 
 <HeroSection>
   <Hero backgroundImageURL={heroBackgroundImageURL}>
     <HeroBody>
-      <HeroTitle>Your Smooth DOC setup is complete!</HeroTitle>
-      <HeroTeaser>Edit `pages/index.mdx` to personalize homepage.</HeroTeaser>
+      <HeroTitle>LimePi Zero - Designed by Traxbee in India with ❤️</HeroTitle>
+      <HeroTeaser>Board that's specially designed to run Linux on a chip that's almost half the size of your credit card.</HeroTeaser>
       <HeroActionList>
         <HeroAction>
           <Button
@@ -30,4 +40,36 @@ import heroBackgroundImageURL from "../images/hero-background.png";
     </HeroBody>
   </Hero>
 </HeroSection>
+  <FeatureSection>
+    <FeatureList>
+      <Feature>
+        <FeatureImage src={ICImageURL} />
+        <FeatureTitle>F1C100S Microprocessor</FeatureTitle>
+        <FeatureText>
+          Efficient Microprocessor with 700MHz that gets your job done with low power consumption.
+        </FeatureText>
+      </Feature>
+      <Feature>
+        <FeatureImage src={ROMImageURL} />
+        <FeatureTitle>16MB ROM / 32MB RAM</FeatureTitle>
+        <FeatureText>
+          Robust NOR Flash W25Q120 from Winbond for mission-critical applications.
+        </FeatureText>
+      </Feature>
+      <Feature>
+        <FeatureImage src={SDCardImageURL} />
+        <FeatureTitle>SD Card Support</FeatureTitle>
+        <FeatureText>
+          Lime Pi Zero supports storage expansion through SD Card upto 32GB.
+        </FeatureText>
+      </Feature>
+      <Feature>
+        <FeatureImage src={USBImageURL} />
+        <FeatureTitle>USB Support</FeatureTitle>
+        <FeatureText>
+          Expand LimePi Zero functionality with 4 USB ports. 1 USB port on board and 3 via GPIO.
+        </FeatureText>
+      </Feature>
+    </FeatureList>
+  </FeatureSection>
 
